@@ -1,0 +1,25 @@
+react hooks
+
+
+Hooks
+useCallback:
+  mere pass ek function hai jitna ho ske usko cache means 
+  memory mai rkh lo agr mai use dobara se run kru toh jitna part pehleka run hota hai usko use krlo aur jo nhi hora rha ho nhi 
+
+   useCallback(fn,dependancies)
+    useCallback((fn),[length,numberAllowed,charAllowed])
+
+  Dependancies:
+  mai number pe aa rha hu ye Dependancies hai iske change hote hi function chnage hona chahiye
+  in this hook dependancies pass in array format
+
+
+
+  useEffect:
+
+
+
+
+  useRef:
+  kisibhi chiz ka reference lena ho toh we use useRef
+    

@@ -1,0 +1,37 @@
+- we are given lottey tickets with a 3 digit number
+- the number gernerated randomly
+- if the sum of all digits is 15 ,we win lottery and we get prize
+  this is our code 
+import { useState } from "react";
+import './Lottery.css';
+import { genTicket,sum } from "./helper";
+export default function Lottery(){
+    let [ticket,setTicket]=useState(genTicket(3));// this function coming from helper.js
+    let isWinning=sum(ticket)===15;
+    let buyTicket=()=>{
+    setTicket(genTicket(3));
+    }
+    return (
+        <div>
+            <h1>Lottery Game!</h1>
+            <div className="ticket">
+                <span>{ticket[0]}</span>
+                <span>{ticket[1]}</span>
+                <span>{ticket[2]}</span>
+            </div>
+            <br />
+            <button onClick={buyTicket}>By new Ticket</button>
+            <h3>{isWinning && "Congrats you won"} </h3>
+           
+        </div>
+    );
+} 
+
+-- component decomposition :break component in small parts
+  setting hierarchy upper level ky ayega then middlle and so on
+
+
+
+  -- changes in lottery Game
+     -make lottery tickets of n digit number
+     - winning sum could be any feasible number
