@@ -1,0 +1,4 @@
+
+Topic covered is 
+ 1.react re-render
+ 2.
