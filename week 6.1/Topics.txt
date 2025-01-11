@@ -1,4 +1,6 @@
 
 Topic covered is 
  1.react re-render
- 2.
+ 2.keys 
+ 3.Wrapper component
+ 
